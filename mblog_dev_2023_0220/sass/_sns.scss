@@ -1,0 +1,86 @@
+@media #{$pc} {
+  .twitter-tweet {
+    margin: 0 5%;
+  }
+}
+
+// @font-face {
+// 	font-family: 'icomoon';
+// 	src:  url('../fonts/icomoon.eot?ms8k5w');
+// 	src:  url('../fonts/icomoon.eot?ms8k5w#iefix') format('embedded-opentype'),
+// 	url('../fonts/icomoon.ttf?ms8k5w') format('truetype'),
+// 	url('../fonts/icomoon.woff?ms8k5w') format('woff'),
+// 	url('../fonts/icomoon.svg?ms8k5w#icomoon') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// [class^="icon-"], [class*=" icon-"] {
+// 	/* use !important to prevent issues with browser extensions that change fonts */
+// 	font-family: 'icomoon' !important;
+// 	speak: none;
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+
+// 	/* Better Font Rendering =========== */
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// .icon-line:before {
+//     content: "\e901";
+// }
+// .icon-pocket:before {
+//     content: "\e902"
+// }
+// .icon-facebook:before {
+// 	content: "\ea90";
+// }
+// .icon-twitter:before {
+// 	content: "\ea96";
+// }
+
+ul.sns_button {
+  background: #fff;
+  border: none;
+  padding-top: 0;
+  @media #{$smartphone} {
+    margin-left: 20px;
+  }
+
+  li {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+      position: relative;
+      display: block;
+      padding: 17px 0;
+      @media #{$smartphone} {
+        font-size: 13px;
+        padding: 7px 0 5px;
+      }
+    }
+  }
+
+  .facebook-btn-icon {
+    background: #2b418b;
+  }
+  .twitter-btn-icon {
+    background: #3d97f1;
+  }
+  .google-plus-btn-icon {
+    background: #48b725;
+  }
+  .pocket-btn-icon {
+    background: #ed243e;
+  }
+}

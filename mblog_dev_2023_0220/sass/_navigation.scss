@@ -1,0 +1,23 @@
+.navigation {
+	margin-top: 60px;
+	margin-bottom: 70px;
+	@media #{$smartphone} {
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	a {
+		// font-size: 100%;
+		color: #7F7F7F;
+		letter-spacing: 0.45px;
+		border: 1px solid #7F7F7F;
+		padding: 19px 20px 18px;
+		text-decoration: none;
+		@media #{$smartphone} {
+			// font-size: 250%;
+			padding: 14px 20px 13px;
+		}
+	}
+}
+
+
+
