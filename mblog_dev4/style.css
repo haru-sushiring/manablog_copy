@@ -1,0 +1,246 @@
+@charset “utf-8”;
+/*
+Theme Name: すしりんぐblog
+Theme URI:
+Author: Haruki Otsuka
+Author URI:
+Description: none
+Version: 1
+License: Don't use.
+*/
+@import "css/style.css";
+
+header .blogname{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+header h1.title{
+	margin-bottom: 0;
+}
+a.sitename:hover{
+	text-decoration: none;
+}
+	span.sitename.main{
+		color: #313131db;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		letter-spacing: 0.1px;
+		font-weight: 500;
+	}
+	span.sitename.sub{
+		margin-top: 35px;
+		font-family: "A-OTF-ShinGoPro-Regular";
+		font-size: 13px;
+		color: #6F6F6F;
+		margin-left: 13px;
+	}
+
+@media screen and (max-width: 767px) {
+	header .blogname{
+		text-align: center;
+		/*margin-top: 32px;*/
+	}
+	header h1.title{
+	margin-bottom: 0;
+	margin-top: 17px;
+	}
+	span.sitename.main{
+		color: #fff;
+		font-size: 20px;
+	}
+	span.sitename.sub{display: none;}
+
+}
+
+@media screen and (max-width: 479px) {
+	p.mokuji {
+		margin: 0 10px 15px !important;
+	}
+}
+
+p.mokuji {
+	margin: 0 40px;
+    background: #f7f7f7;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.gray {
+	background-color: #efefef;
+  color: #757575;
+  padding: 0.1em 0.4em;
+  font-family: 'Consolas','Arial','Menlo','Avenir Next','Verdana',sans-serif;
+}
+
+img.af-img {
+	border: 1px solid #ffffff !important;
+	height: 0;
+	width: 0;
+	margin: 0;
+}
+
+/* アプリーチ */
+.appreach {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 40px;
+}
+.appreach:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.appreach p {
+  margin: 0;
+}
+.appreach a:after {
+  display: none;
+}
+.appreach__icon {
+  border-radius: 10%;
+  width: 100px;
+  height: auto;
+}
+.appreach__detail {
+  display: block;
+  margin-top: 12px;
+}
+.appreach__name {
+  color: #111;
+  font-weight: bold;
+}
+.appreach__info {
+  font-size: 11px;
+  line-height: 17px;
+  margin-top: 5px !important;
+  color: #999;
+}
+.appreach__developper, .appreach__price {
+  margin-right: 0.5em;
+}
+.appreach__posted a {
+  margin-left: 0.5em;
+  color: #999;/* 本文のリンク色と揃えてもいいかも */
+  text-decoration: none;
+}
+.appreach__links {
+  margin-top: 12px;
+}
+.appreach__links a img {
+    width: 135px;
+    height: 40px;
+}
+.appreach__links a:nth-of-type(2) img {
+    /* ボタンが2つある場合の2つ目のボタンに対してマージンを指定 */
+    margin: 10px 0 0;
+}
+
+@media screen and (min-width: 360px) {/* 画面幅360px以上のとき */
+	.appreach__links a:nth-of-type(2) img {
+		margin: 0 0 0 10px;
+	}  
+}
+
+@media screen and (min-width: 481px) {/* 画面幅481px以上のとき */
+	.appreach {
+		text-align: left;
+	}
+	.appreach__icon {
+		float: left;
+		margin: 0 15px 0 0;
+	}
+	.appreach__detail {
+		margin-top: 0;
+		margin-left: 115px;
+	}
+	.appreach__links {
+		margin-left: 115px;
+		padding-left: 30px;
+	}
+}
+
+@media screen and (min-width: 640px) {/* 画面幅640px以上のとき */
+.appreach__icon {
+    margin: 0 20px 0 0;
+    width: 120px;
+}
+.appreach__detail {
+    margin-left: 140px;
+}
+.appreach__info {
+    margin-top: 6px !important;
+}
+.appreach__links {
+    margin-top: 15px;
+    margin-left: 140px;
+    padding-left: 40px;
+}
+}
+
+/* Twitter footer タイムライン */
+.twitter-timeline {
+	margin: 0 auto;
+}
+
+/* もしも かんたんリンク */
+.easyLink-box {
+	margin: 0 20px !important;
+}
+.easyLink-img-box span > img {
+		width: auto !important;
+	}
+@media screen and (max-width: 480px) {
+	.easyLink-box {
+		margin: 0 auto !important;
+	}
+	.easyLink-img-box span > img {
+		max-width: 160px !important;
+	}
+}
+.easyLink-img-box span {
+	width: auto !important;
+}
+.easyLink-arrow-left {
+	visibility: hidden !important;
+}
+.easyLink-arrow-right {
+	visibility: hidden !important;
+}
+
+/* AdSense */
+.ad-single {
+	margin-bottom: 40px;
+}
+.ad-single ins {
+	width: 336px !important;
+	height: 280px !important;
+}
+.ad-single ins div {
+	width: 336px !important;
+	height: 280px !important;
+}
+.ad-single ins div iframe {
+	margin-left: 0;
+	width: 336px !important;
+	height: 280px !important;
+}
+
+.ad-sidebar {
+	text-align: center;
+    background: #F7F7F7;
+}
+
+.ad-multiplex {
+	margin-top: 40px;
+}
+.ad-multiplex ins div iframe {
+	margin: 0 !important;
+}
+
+/* 内部リンク */
+.link-box {
+	margin: 0 30px !important; 
+}

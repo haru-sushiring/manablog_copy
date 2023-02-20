@@ -1,0 +1,67 @@
+footer {
+	padding-top: 50px;
+	@media #{$smartphone} {
+		padding-top: 20px;
+	}
+
+	hr {
+		float: left;
+	}
+	hr.twitter {
+		margin-bottom: 5px;
+	}
+
+	h4 {
+		font-weight: 600;
+		// font-size: 130%;
+		color: #272727;
+		letter-spacing: 0.5px;
+		margin-bottom: 5px;
+		@media #{$smartphone} {
+			// font-size: 450%;
+			margin-top: 30px;
+		}
+	}
+	p, a {
+		font-size: 12px;
+		color: #7B7B7B;
+		// line-height: 30px;
+		@media #{$smartphone} {
+			// font-size: 290%;
+		}
+	}
+
+	li {
+		border-top: dashed 1px #686868;
+		&:last-child {
+			border-bottom: dashed 1px #686868;
+		}
+		a {
+			color: #7B7B7B;
+			line-height: 50px;
+			// font-size: 100%;
+			padding-left: 15px;
+			@media #{$smartphone} {
+				// font-size: 290%;
+				line-height: 45px;
+			}
+		}
+	}
+
+
+	.credit {
+		background: #757575;
+		margin-top: 40px;
+		p {
+			padding-top: 20px;
+			padding-bottom: 15px;
+			color: #fff;
+			a {
+				color: #fff;
+				@media #{$smartphone} {
+					// font-size: 100%;
+				}
+			}
+		}
+	}
+}

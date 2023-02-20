@@ -1,0 +1,159 @@
+/*----------------------------------------------------------*/
+/* ヨメレバ・カエレバ */
+/*----------------------------------------------------------*/
+
+.booklink-box, .kaerebalink-box {
+	border: solid 1px #ddd;
+	padding: 20px 10px 0px 20px;
+	margin-bottom: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+
+	.booklink-info,
+	.kaerebalink-info {
+		text-align: left;
+	}
+}
+
+.booklink-image,
+.kaerebalink-image {
+	float: left;
+	margin-right: 40px;
+}
+.booklink-image a img,
+.kaerebalink-image a img {
+	width: 120px;
+}
+
+.kaerebalink-name,
+.booklink-name {
+	font-size: 17px;
+	font-weight: 600;
+}
+.booklink-powered-date,
+.kaerebalink-powered-date {
+	display: none;
+}
+.booklink-detail,
+.kaerebalink-detail {
+	margin-top: 30px;
+}
+.kaerebalink-link1,
+.booklink-link2 {
+	margin-top: 30px;
+}
+.shoplinkamazon {
+	display: inline;
+	margin-right: 5px;
+	padding: 0px 0px 0px 0px;
+	white-space: nowrap;
+	background: #E47911;
+	float: left;
+}
+.shoplinkamazon a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.9em 1.5em;
+}
+.shoplinkkindle {
+	margin-right: 5px;
+	padding: 0px 0px 0px 0px;
+	white-space: nowrap;
+	background: #565a5c;
+	display: inline;
+	float: left;
+}
+.shoplinkkindle a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.9em 2em;
+}
+.shoplinkrakuten {
+	display: inline;
+	margin-right: 5px;
+	padding: 0px 0px 0px 0px;
+	white-space: nowrap;
+	background: #e00007;
+	float: left;
+}
+.shoplinkrakuten a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.9em 1.5em;
+}
+.shoplinkyahoo {
+	display: inline;
+	margin-right: 5px;
+	padding: 0px 0px 0px 0px;
+	white-space: nowrap;
+	background: #FF0034;
+	float: left;
+	margin-top: 10px;
+}
+.shoplinkyahoo a {
+	color: #FFFFFF;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0.9em 1em;
+}
+
+.booklink-footer {
+	clear: both;
+	padding-top: 30px;
+}
+
+
+
+@media #{$smartphone} {
+
+	.booklink-box, .kaerebalink-box {
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 20px 0 0 20px;
+	}
+
+
+	.booklink-image {
+		margin-right: 10px;
+	}
+	.booklink-image a img {
+		width: 120px;
+	}
+	.booklink-name {
+		font-size: 17px;
+	}
+
+	.booklink-detail, .kaerebalink-detail {
+		display: none;
+	}
+
+	.kaerebalink-link1,
+	.booklink-link2 {
+		clear: both;
+	}
+	.booklink-link2 {
+		/*margin-top: 90px;*/
+	}
+
+	.shoplinkamazon,
+	.shoplinkkindle,
+	.shoplinkrakuten{
+		margin-top: 10px;
+	}
+	.shoplinkamazon a {
+		padding: 0.9em 1em;
+	}
+	.shoplinkkindle a {
+		padding: 0.9em 1.5em;
+	}
+	.shoplinkrakuten a {
+		padding: 0.9em 0.5em;
+	}
+
+	img.alignnone.size-full.sp-width-80 {
+		width: 80%;
+	}
+}

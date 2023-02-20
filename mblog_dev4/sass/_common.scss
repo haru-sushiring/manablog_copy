@@ -1,0 +1,69 @@
+ @font-face {
+	font-family: "A-OTF-ShinGoPro-Regular";
+	src: local('A-OTF-ShinGoPro-Regular');
+}
+
+ @font-face {
+	font-family: "Avenir-Next";
+	src: local('Avenir-Next');
+}
+
+body, p, h1, h2, h3, h4, h5, h6{
+	font-family: Noto, Hiragino Sans,Helvetica,Arial,sans-serif;
+	text-rendering: optimizeLegibility;
+	background: rgba(0, 0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	line-height: 2;
+}
+
+p, li { font-size: 17px; }
+h1, h2 { font-size: 25px; }
+h3 { font-size: 20px; }
+h4 { font-size: 20px; }
+
+@media #{$smartphone} {
+	p { font-size: 16px; }
+	h2{ font-size: 23px; }
+}
+
+// common
+.thumbnail {
+	border: none;
+	padding: 0;
+
+	 a {
+		position: relative;
+		display: table;
+		width: 100%;
+		height: 100px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+hr {
+	width: 20%;
+	border: 1px solid #79BD9A;
+}
+
+.nmb {
+	margin-bottom: 0!important;
+}
+
+@media #{$pc} {
+	.pc-none {
+		display: none!important;
+	}
+}
+@media #{$smartphone} {
+	.sp-none {
+		display: none!important;
+	}
+}

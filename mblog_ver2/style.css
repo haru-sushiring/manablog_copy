@@ -1,0 +1,71 @@
+/*
+Theme Name: mblog
+Theme URI:https://manablog.org/manablog-wordpress/
+Author: Manabu Bannai
+Author URI:https://manablog.org/
+Description: none
+Version: 2
+License: GNU General Public License
+*/
+@import "css/style.css";
+
+.single > img:not(.img-responsive) {
+    width: auto;
+    max-width: 87.5%;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    border: 1px solid #d8d8d8;
+}
+
+header .blogname{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+header h1.title{
+	margin-bottom: 0;
+}
+a.sitename:hover{
+	text-decoration: none;
+}
+	span.sitename.main{
+		color: #313131db;
+		font-size: 30px;
+		font-family: Helvetica Neue;
+		letter-spacing: 0.1px;
+		font-weight: 500;
+	}
+	span.sitename.sub{
+		margin-top: 35px;
+		font-family: "A-OTF-ShinGoPro-Regular";
+		font-size: 13px;
+		color: #6F6F6F;
+		margin-left: 13px;
+	}
+
+@media screen and (max-width: 767px) {
+	header .blogname{
+		text-align: center;
+		/*margin-top: 32px;*/
+	}
+	header h1.title{
+	margin-bottom: 0;
+	margin-top: 17px;
+	}
+	span.sitename.main{
+		color: #fff;
+		font-size: 20px;
+	}
+	span.sitename.sub{display: none;}
+
+}
+
+/*↓一応*/
+footer span.caret {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+header h1.title {
+   display: inline;
+}
+}

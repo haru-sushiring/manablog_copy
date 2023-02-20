@@ -1,0 +1,136 @@
+header {
+	@media #{$smartphone} {
+		padding-bottom: 10px;
+	}
+
+	h1.title {
+		margin-top: 0;
+		@media #{$smartphone} {
+			margin-bottom: 0;
+			line-height: 0;
+		}
+	}
+	img.logo {
+		width: 100%;
+		margin-top: 30px;
+		@media #{$smartphone} {
+			margin-top: 20px;
+			padding: 0px 32% 0 13%;
+		}
+	}
+
+	p {
+		margin-top: 40px;
+		font-family: "A-OTF-ShinGoPro-Regular";
+		font-size: 13px;
+		color: #6F6F6F;
+		@media #{$smartphone} {
+			display: none;
+		}
+	}
+
+	.sp-nav-btn {
+		display: none;
+		@media #{$smartphone} {
+			display: inline-block;
+			font-size: 20px;
+			color: #fff;
+			margin-top: 13px;
+		}
+	}
+	@media #{$smartphone} {
+		background: #000000;
+	}
+
+	.nav-bg {
+		background: #222222;
+		margin-top: 10px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+
+		.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+			background: #222222;
+		}
+
+		.nav.navbar-nav {
+			li {
+				margin-right: 20px;
+			}
+			a {
+				color: #fff;
+				font-size: 15px;
+				letter-spacing: 1px;
+				font-family: sans-serif;
+				font-weight: 600;
+				&:hover {
+					background: #686868;
+				}
+			}
+
+			.dropdown-menu {
+
+				padding: 0;
+				li {
+					width: 100%;
+					padding: 0;
+					border-bottom: dashed 1px #686868;
+					&:last-child {
+						border: none;
+					}
+					a {
+						line-height: 50px;
+						color: #333;
+						&:hover {
+							color: #fff;
+						}
+					}
+
+				}
+			}
+
+		}
+	}
+
+	@media #{$smartphone} {
+		.pushy{
+			width: 250px; /* Changed the width to 400px */
+			padding-left: 20px;
+		}
+
+		.nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+			background-color: #6a6a6a;
+		}
+
+
+		.pushy-left{
+			transform: translate3d(-250px,0,0); /* Updated the values */
+			/* Don't forget the vendor prefixes */
+		}
+
+		.pushy-open-left #container,
+		.pushy-open-left .push {
+			transform: translate3d(250px, 0, 0); /* Updated the values */
+		}
+
+		.pushy-right {
+			transform: translate3d(250px, 0, 0); /* Updated the values */
+			/* Don't forget the vendor prefixes */
+		}
+
+		.pushy-open-right #container,
+		.pushy-open-right .push {
+			transform: translate3d(-250px, 0, 0); /* Updated the values */
+			/* Don't forget the vendor prefixes */
+			a {
+				color: #bababa;
+			}
+		}
+
+		.dropdown-menu>li>a {
+			color: #939393;
+		}
+
+	}
+
+}
+

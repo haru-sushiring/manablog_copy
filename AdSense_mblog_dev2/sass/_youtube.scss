@@ -1,0 +1,23 @@
+.YoutubeWrapper {
+	position: relative;
+	margin-top: 1.2em;
+	margin-bottom: 60px;
+	padding-top: 69px;
+	padding-bottom: 50%;
+	overflow: hidden;
+}
+
+.YoutubeWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 90%;
+	padding: 0px 5%;
+}
+
+@media #{$smartphone} {
+	.YoutubeWrapper iframe {
+		width: 97.5%;
+	}
+}
